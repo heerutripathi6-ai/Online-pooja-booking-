@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ऑनलाइन पूजा बुकिंग | आचार्य श्री हीरेन्द्र जी</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#fff8ed;color:#3d2414}
+header{background:linear-gradient(135deg,#8b1e00,#d96b00);color:white;text-align:center;padding:28px 16px}
+header h1{margin:0 0 8px;font-size:30px}header p{margin:6px 0;font-size:17px}
+.container{max-width:900px;margin:auto;padding:18px}
+.card{background:white;border-radius:16px;padding:22px;margin:18px 0;box-shadow:0 4px 18px #00000015}
+h2{color:#a33b00;margin-top:0}.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.service{padding:15px;border:1px solid #f0c99d;border-radius:12px;background:#fffaf4;font-weight:bold}
+label{display:block;font-weight:bold;margin:14px 0 6px}input,select,textarea{width:100%;padding:13px;border:1px solid #d8b48d;border-radius:9px;font-size:16px}
+textarea{min-height:90px;resize:vertical}.btn{display:inline-block;border:0;border-radius:10px;padding:14px 20px;font-size:17px;font-weight:bold;cursor:pointer;text-decoration:none}
+.submit{background:#168b45;color:white;width:100%;margin-top:18px}.whatsapp{background:#25D366;color:white;margin-top:12px;width:100%;text-align:center}
+.notice{background:#fff0d5;border-left:5px solid #d96b00;padding:14px;border-radius:8px}
+footer{text-align:center;background:#3d2414;color:white;padding:22px;margin-top:25px}
+.small{font-size:14px;color:#6c5849}
+</style>
+</head>
+<body>
+<header>
+<h1>🕉️ ऑनलाइन पूजा बुकिंग</h1>
+<p>श्री शिरडी साईं मंदिर, साईं एनक्लेव, चिपियाना</p>
+<p><strong>प्रधान आचार्य — आचार्य श्री हीरेन्द्र जी</strong></p>
+<p>📞 9560 70 2646</p>
+</header>
+
+<div class="container">
+<section class="card">
+<h2>🙏 पूजा एवं धार्मिक सेवाएँ</h2>
+<div class="services">
+<div class="service">🔱 रुद्राभिषेक</div>
+<div class="service">🔥 हवन एवं यज्ञ</div>
+<div class="service">📖 कथा</div>
+<div class="service">🌺 दुर्गा सप्तशती पाठ</div>
+<div class="service">🏠 गृह प्रवेश पूजा</div>
+<div class="service">🐍 कालसर्प दोष पूजा</div>
+<div class="service">🙏 पितृदोष पूजा</div>
+<div class="service">🪐 ग्रह शांति पूजा</div>
+<div class="service">📜 जन्मपत्री विश्लेषण</div>
+<div class="service">🕉️ महामृत्युंजय जाप</div>
+<div class="service">💍 विवाह बाधा निवारण पूजा</div>
+<div class="service">✨ अन्य विशेष पूजा</div>
+</div>
+</section>
+
+<section class="card">
+<h2>📋 ऑनलाइन पूजा बुक करें</h2>
+<div class="notice">फॉर्म भरने के बाद आचार्य जी से संपर्क करके तारीख एवं समय की पुष्टि अवश्य करें।</div>
+<form id="bookingForm">
+<label>यजमान का नाम *</label>
+<input id="name" required placeholder="अपना पूरा नाम लिखें">
+
+<label>मोबाइल नंबर *</label>
+<input id="phone" type="tel" required placeholder="10 अंकों का मोबाइल नंबर">
+
+<label>पूजा का चयन करें *</label>
+<select id="puja" required>
+<option value="">-- पूजा चुनें --</option>
+<option>रुद्राभिषेक</option><option>हवन एवं यज्ञ</option><option>कथा</option>
+<option>दुर्गा सप्तशती पाठ</option><option>गृह प्रवेश पूजा</option>
+<option>कालसर्प दोष पूजा</option><option>पितृदोष पूजा</option>
+<option>ग्रह शांति पूजा</option><option>जन्मपत्री विश्लेषण</option>
+<option>महामृत्युंजय जाप</option><option>विवाह बाधा निवारण पूजा</option><option>अन्य विशेष पूजा</option>
+</select>
+
+<label>इच्छित तारीख *</label>
+<input id="date" type="date" required>
+
+<label>इच्छित समय</label>
+<input id="time" type="time">
+
+<label>पूजा कहाँ करनी है?</label>
+<select id="place">
+<option>मंदिर में</option><option>अपने घर पर</option><option>ऑनलाइन/दूर से संकल्प</option>
+</select>
+
+<label>पूरा पता</label>
+<textarea id="address" placeholder="घर पर पूजा हो तो पूरा पता लिखें"></textarea>
+
+<label>विशेष संकल्प / मनोकामना</label>
+<textarea id="wish" placeholder="जैसे गृह शांति, स्वास्थ्य, विवाह, व्यापार आदि"></textarea>
+
+<button class="btn submit" type="submit">📲 WhatsApp पर बुकिंग भेजें</button>
+</form>
+<a class="btn whatsapp" href="https://wa.me/919560702646?text=नमस्ते%20आचार्य%20जी,%20मुझे%20पूजा%20बुकिंग%20के%20बारे%20में%20जानकारी%20चाहिए।">💬 सीधे WhatsApp पर संपर्क करें</a>
+<p class="small">नोट: अभी ऑनलाइन भुगतान जोड़ा नहीं गया है। UPI/QR भुगतान सुविधा बाद में जोड़ी जा सकती है।</p>
+</section>
+</div>
+
+<footer>
+<p>🙏 आपकी श्रद्धा — हमारा संकल्प 🙏</p>
+<p>आचार्य श्री हीरेन्द्र जी | 9560 70 2646</p>
+</footer>
+
+<script>
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+e.preventDefault();
+const n=document.getElementById('name').value;
+const p=document.getElementById('phone').value;
+const puja=document.getElementById('puja').value;
+const d=document.getElementById('date').value;
+const t=document.getElementById('time').value || 'समय बाद में तय होगा';
+const place=document.getElementById('place').value;
+const a=document.getElementById('address').value || 'नहीं दिया गया';
+const w=document.getElementById('wish').value || 'कोई विशेष संकल्प नहीं';
+const msg=`नमस्ते आचार्य जी 🙏%0Aऑनलाइन पूजा बुकिंग%0A%0Aयजमान: ${n}%0Aमोबाइल: ${p}%0Aपूजा: ${puja}%0Aतारीख: ${d}%0Aसमय: ${t}%0Aस्थान: ${place}%0Aपता: ${a}%0Aसंकल्प/मनोकामना: ${w}`;
+window.open('https://wa.me/919560702646?text='+msg,'_blank');
+});
+</script>
+</body>
+</html>
